@@ -2,9 +2,14 @@
 // Also this is the place define what is the minimun terraform version need to run for this configuration
 terraform {
   required_providers {
-    docker = {
-      source  = "kreuzwerker/docker"
-      version = "~> 2.13.0"
+    random = {
+      source  = "hashicorp/random"
+      version = "3.0.0"
+    }
+
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 2.0.0"
     }
   }
 
